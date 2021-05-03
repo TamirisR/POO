@@ -1,7 +1,6 @@
-<?php
-
-abstract class TipoPessoa
-{
+<?php 
+require_once 'DataBase.class.php';
+abstract class TipoPessoa extends DataBase{
 
     protected $id;
     protected $nome;
@@ -10,4 +9,4 @@ abstract class TipoPessoa
 		parent::__construct();
 	}
 }
-}
+
